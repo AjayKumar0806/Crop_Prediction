@@ -69,7 +69,7 @@ def addrec():
 def user_login():
     return render_template("login.html")
 
-@app.route('/logindetails', methods=['POST'])
+@app.route('http://127.0.0.1:5000/logindetails', methods=['POST'])
 def logindetails():
     if request.method == 'POST':
         usrname = request.form['username']
